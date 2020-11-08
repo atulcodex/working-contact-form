@@ -1,11 +1,11 @@
 <?php
 
-$EmailFrom = "abdulppj@gmail.com";
-$EmailTo = "atulkprajapati2000@gmail.com";
-$Subject = $_POST['Name']." Contacted you from your portfolio site";
-$Name = Trim(stripslashes($_POST['Name']));
-$Email = Trim(stripslashes($_POST['Email'])); 
-$Message = Trim(stripslashes($_POST['Message'])); 
+$EmailFrom = "abdulppj@gmail.com";   //your first email from where you want to send email
+$EmailTo = "atulkprajapati2000@gmail.com";   //your second email where you want to receive contact form content
+$Subject = $_POST['Name']." Contacted you from your portfolio site";  //mail subject
+$Name = Trim(stripslashes($_POST['Name']));    //getting name from html page
+$Email = Trim(stripslashes($_POST['Email']));     //getting email from html page
+$Message = Trim(stripslashes($_POST['Message']));     //getting message from html page
 
 // validation
 $validationOK=true;
